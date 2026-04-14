@@ -1,7 +1,7 @@
 {
-  "name": "dream-weaver-erp-backend",
+  "name": "bigbinaryerp-backend",
   "version": "1.0.0",
-  "description": "Backend email service for Dream Weaver ERP",
+  "description": "Backend email service for BigBinaryERP",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

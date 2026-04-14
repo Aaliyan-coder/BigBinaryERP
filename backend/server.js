@@ -56,7 +56,7 @@ app.post("/api/contact", async (req, res) => {
   try {
     // ── Email to YOU (the business) ──
     await transporter.sendMail({
-      from: `"BBT" <${process.env.GMAIL_USER}>`,
+      from: `"BigBinaryERP" <${process.env.GMAIL_USER}>`,
       to: process.env.RECEIVER_EMAIL,
       replyTo: email,
       subject: `New Enquiry: ${service} — ${firstName} ${lastName}`,
@@ -99,7 +99,7 @@ app.post("/api/contact", async (req, res) => {
           <!-- Footer -->
           <div style="background: #fdf2f8; padding: 20px 32px; text-align: center; border-top: 1px solid #fce7f3;">
             <p style="color: #9ca3af; font-size: 11px; margin: 0; letter-spacing: 0.5px;">
-              Sent from BBT Contact Form &nbsp;•&nbsp; ${new Date().toLocaleString("en-PK", { timeZone: "Asia/Karachi" })} PKT
+              Sent from BigBinaryERP Contact Form &nbsp;•&nbsp; ${new Date().toLocaleString("en-PK", { timeZone: "Asia/Karachi" })} PKT
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ app.post("/api/contact", async (req, res) => {
 
     // ── Auto-reply to the USER ──
     await transporter.sendMail({
-      from: `"BBT" <${process.env.GMAIL_USER}>`,
+      from: `"BigBinaryERP" <${process.env.GMAIL_USER}>`,
       to: email,
       subject: `We received your message, ${firstName}!`,
       html: `
@@ -125,7 +125,7 @@ app.post("/api/contact", async (req, res) => {
           <div style="padding: 32px; background: #ffffff;">
             <p style="color: #1f2937; font-size: 16px; line-height: 1.6; margin-top: 0;">Hi <strong>${firstName}</strong>,</p>
             <p style="color: #4b5563; line-height: 1.7; font-size: 14px;">
-              Thank you for reaching out to <strong style="color: #be185d;">BBT</strong>. We've received your enquiry about <strong>${service}</strong> and will get back to you within one business day.
+              Thank you for reaching out to <strong style="color: #be185d;">BigBinaryERP</strong>. We've received your enquiry about <strong>${service}</strong> and will get back to you within one business day.
             </p>
 
             <div style="background: #fdf2f8; border-left: 4px solid #be185d; padding: 16px 20px; border-radius: 0 10px 10px 0; margin: 24px 0;">
@@ -139,7 +139,7 @@ app.post("/api/contact", async (req, res) => {
           <!-- Footer -->
           <div style="background: #fdf2f8; padding: 20px 32px; text-align: center; border-top: 1px solid #fce7f3;">
             <p style="color: #9ca3af; font-size: 11px; margin: 0; letter-spacing: 0.5px;">
-              © ${new Date().getFullYear()} BBT &nbsp;•&nbsp; 444-Q DHA Phase 2, Lahore, Pakistan
+              © ${new Date().getFullYear()} BigBinaryERP &nbsp;•&nbsp; 444-Q DHA Phase 2, Lahore, Pakistan
             </p>
           </div>
         </div>
