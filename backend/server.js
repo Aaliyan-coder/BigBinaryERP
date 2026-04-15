@@ -13,6 +13,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://www.bigbinaryerp.com",
   "https://big-binary-erp.vercel.app",
+  "https://big-binary-erp-backend.vercel.app",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
